@@ -293,12 +293,12 @@ async function main() {
 
     // --------------------------------------   2012 KH--------------------------------------
 
-    const BDO_LIST = await playerSearch([827], 0); // playerSearch(시즌넘버, 최소오버롤)
-    let BDO_RESULTS = await playerPriceValue(
-      BDO_LIST,
+    const BLD_LIST = await playerSearch([828], 0); // playerSearch(시즌넘버, 최소오버롤)
+    let BLD_RESULTS = await playerPriceValue(
+      BLD_LIST,
       [1, 2, 3, 4, 5, 6, 7, 8]
     ); // playerPriceValue(데이터 , 강화등급)
-    await saveToDB(BDO_RESULTS);
+    await saveToDB(BLD_RESULTS);
 
     // -------------------------------------------------------------------------------------------------------------------------------
 
